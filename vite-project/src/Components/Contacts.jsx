@@ -41,7 +41,7 @@ const Contacts = () => {
       confirmButtonText: "Yes, delete it!"
     }).then((result) => {
       if (result.isConfirmed) {
-        axios.delete(`http://localhost:3001/contactmsyt/contact/${id}`, {
+        axios.delete(`https://contact-sphere.onrender.com/contactmsyt/contact/${id}`, {
           headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`,
           },
@@ -90,7 +90,7 @@ const Contacts = () => {
   ]
   useEffect(()=> {
     setLoading(true)
-    axios.get('http://127.0.0.1:3001/contactmsyt/contacts',{
+    axios.get('https://contact-sphere.onrender.com/contactmsyt/contacts',{
         headers: {
           Authorization: `Berear ${localStorage.getItem('token')}`
       }

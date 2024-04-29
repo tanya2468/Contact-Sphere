@@ -62,7 +62,7 @@ const router= createBrowserRouter([
 const App = () => {
   const [user,setUser]=useState();
   useEffect(() => {
-    axios.get('http://127.0.0.1:3001/contactmsyt/verify',{
+    axios.get('https://contact-sphere.onrender.com/contactmsyt/verify',{
       headers: {
         Authorization: `Berear ${localStorage.getItem('token')}`
     }

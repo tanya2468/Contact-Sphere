@@ -21,7 +21,7 @@ const AddContact = () => {
   const handleSubmit = (e) => {
     e.preventDefault()
 
-      axios.post('http://127.0.0.1:3001/contactmsyt/add-contact',values,{
+      axios.post('https://contact-sphere.onrender.com/contactmsyt/add-contact',values,{
         headers: {
           Authorization: `Berear ${localStorage.getItem('token')}`
       }

@@ -23,7 +23,7 @@ const EditContact = () => {
   }
   const handleSubmit = (e) => {
     e.preventDefault()
-      axios.put('http://127.0.0.1:3001/contactmsyt/update-contact/'+id,values,{
+      axios.put('https://contact-sphere.onrender.com/contactmsyt/update-contact/'+id,values,{
         headers: {
           Authorization: `Berear ${localStorage.getItem('token')}`
       }
@@ -42,7 +42,7 @@ const EditContact = () => {
   };
   useEffect(()=> {
     
-    axios.get('http://127.0.0.1:3001/contactmsyt/contact/'+id,{
+    axios.get('https://contact-sphere.onrender.com/contactmsyt/contact/'+id,{
         headers: {
           Authorization: `Berear ${localStorage.getItem('token')}`
       }
